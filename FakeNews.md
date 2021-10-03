@@ -85,7 +85,7 @@ glimpse(full)
 
 **Missing values**
 
-There are some missing values in the columns "text" and "author".
+There are some missing values in the columns "text" and "title".
 
 ``` r
 plot_missing(full, ggtheme = theme_minimal())
@@ -104,7 +104,7 @@ full[is.na(full)] = "missing"
 
 **label**
 
-The target variable is evenly distributed (i.e. there is the same amount of reliable and unreliable articles in the training set).
+The target variable is evenly distributed (i.e. there is the same amount of reliable and unreliable articles in the training and test set).
 
 ``` r
 full %>%
